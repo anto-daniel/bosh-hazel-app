@@ -1,0 +1,5 @@
+check process hazel
+    with pidfile /var/vcap/sys/run/hazel/hazel.pid
+    start program "/bin/bash /var/vcap/jobs/hazel/sample start"
+    stop program "/bin/bash /var/vcap/jobs/hazel/sample stop"
+    group vcap

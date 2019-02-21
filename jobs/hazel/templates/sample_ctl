@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+RUN_DIR=/var/vcap/sys/run/hazel
+LOG_DIR=/var/vcap/sys/log/hazel
+PIDFILE=$RUN_DIR/hazel.pid
+
+case $1 in
+
+  start)
+    mkdir -p $RUN_DIR
+    mkdir -p $LOG_DIR
+
+    echo $$ > $PIDFILE
+   
+    exec /var/vcap/packages/hazel/sample  >>$LOG_DIR/sample.stdout.log 2>>$LOG_DIR/sample.stderr.log
+    ;;
+
+  stop)
+    PID=$(head -1 $PIDFILE)
+    kill $PID
+    while [ -e /proc/$PID ]; do sleep 0.1; done
+    rm -f $PIDFILE
+    ;;
+
+  *)
+  echo "Usage: sample_ctl {start|stop}" ;;
+esac
+exit 0

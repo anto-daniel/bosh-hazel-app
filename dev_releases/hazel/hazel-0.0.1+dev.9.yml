@@ -1,0 +1,15 @@
+name: hazel
+version: 0.0.1+dev.9
+commit_hash: empty
+uncommitted_changes: true
+jobs:
+- name: hazel
+  version: 6b9141e4ab1a52d06d5f54a90df096493d50b119
+  fingerprint: 6b9141e4ab1a52d06d5f54a90df096493d50b119
+  sha1: 61023696c506551f0dcf975aaa26d95023c1d5f0
+packages:
+- name: hazel
+  version: 5156aa1532da6a528a13dcd1fbd2b73da6d1cc3d
+  fingerprint: 5156aa1532da6a528a13dcd1fbd2b73da6d1cc3d
+  sha1: 866f1bdecf2c7544a8ba24ade900c2716fa4d9ce
+  dependencies: []

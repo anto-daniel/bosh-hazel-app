@@ -1,0 +1,11 @@
+set -e -u
+
+echo "Extracting hazel..."
+tar zxvf hazel/hazel_0.0.1.tar.gz
+(
+  cp sample ${BOSH_INSTALL_TARGET}/
+  cd ${BOSH_INSTALL_TARGET}
+  chmod +x sample
+)
+
+

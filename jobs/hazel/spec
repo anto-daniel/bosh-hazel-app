@@ -1,0 +1,9 @@
+---
+name: hazel
+
+templates:
+  sample_ctl: sample
+
+packages: 
+  - hazel
+
