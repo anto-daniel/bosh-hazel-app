@@ -3,7 +3,7 @@ name: hazel
 
 releases:
 - name: hazel
-  version: 0.0.1+dev.10
+  version: latest
 
 stemcells:
 - alias: default
