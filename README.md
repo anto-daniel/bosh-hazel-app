@@ -1,5 +1,5 @@
 # bosh-hazel-app
-My first successful bosh app
+My first successful bosh app:
 * HOW TO CREATE RELEASE *
 
 ```
