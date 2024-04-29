@@ -1,3 +1,4 @@
 .*.swp
 dev_releases
 .dev_builds
+.envrc
